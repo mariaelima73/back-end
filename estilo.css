@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    color: azure;
+}
+h1{
+    text-align: center;
+}
+.login,.login-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.login label, .login input{
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-items: center;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: darkcyan;
+    margin-right: 10px;
+    padding: 8px;
+}
