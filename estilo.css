@@ -1,26 +1,51 @@
 body{
-    background-color: black;
+    background-image: url(tablet.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 900px;
     color: azure;
+    font-family: Arial, sans-serif;
 }
-h1{
+.container{
+    padding: 130px 0 0 0;
+}
+.index-text, .sobre-text, .login-text{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+h1, p{
     text-align: center;
+    margin: 12px 0 20px 0;
 }
-.login,.login-button{
+.index-image{
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
 }
-.login label, .login input{
-    margin-right: 10px;
-    padding: 5px;
-    font-size: 16px;
-    display: flex;
-    justify-items: center;
+.container-button, .container-login{
+    display: grid;
+    justify-content: center;
 }
-button{
+.container-button button, input{
+    width: 400px; /* ***** */
     border: none;
     border-radius: 10px;
-    background-color: darkcyan;
-    margin-right: 10px;
-    padding: 8px;
+    background-color: azure;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 15px;
+}
+button{
+    cursor: pointer;
+}
+label{
+    text-align: center;
+    margin: 7px;
+}
+input{
+    width: 380px; /* ***** */
+    text-align: center;
+}
+.container-login, .sobre-text{
+    margin-bottom: 20px;
 }
