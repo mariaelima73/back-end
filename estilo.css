@@ -1,8 +1,9 @@
 body{
     background-image: url(tablet.png);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 900px;
+    background-position: center;
+    height: 98vh;
+    background-size: contain;
     color: azure;
     font-family: Arial, sans-serif;
 }
@@ -18,7 +19,7 @@ h1, p{
     text-align: center;
     margin: 12px 0 20px 0;
 }
-.index-image{
+.index-image, .table, .table-check{
     display: flex;
     justify-content: center;
 }
@@ -26,8 +27,10 @@ h1, p{
     display: grid;
     justify-content: center;
 }
-.container-button button, input{
+.container-button button{
     width: 400px; /* ***** */
+}
+.container-button button, .login-input, .table-input{
     border: none;
     border-radius: 10px;
     background-color: azure;
@@ -42,10 +45,36 @@ label{
     text-align: center;
     margin: 7px;
 }
-input{
+.login-input{
     width: 380px; /* ***** */
     text-align: center;
 }
 .container-login, .sobre-text{
     margin-bottom: 20px;
+}
+.table{
+    margin-bottom: 12px;
+}
+table{
+    padding: 10px 5px;
+    background-image:linear-gradient(180deg,rgb(132, 195, 253), rgb(0, 119, 255),rgb(0, 119, 255),rgb(0, 119, 255),rgb(132, 195, 253));
+}
+table, .table-header-item{
+    border-radius: 5px;
+}
+.table-header-item, .table-input{
+    color: black;
+    border-radius: 5px;
+    border: 0;
+    width: 75px;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+}
+.table-check{
+    margin-bottom: 12px;
+}
+#total{
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
 }

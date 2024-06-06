@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINANCE SENAI - Sobre</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sobre-text">
+            <h1>Gestão de Gastos</h1>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th><!--checkbox--></th>
+                        <th class="table-header-item">Data</th>
+                        <th class="table-header-item">Categoria</th>
+                        <th class="table-header-item">Conta</th>
+                        <th class="table-header-item">Descrição</th>
+                        <th class="table-header-item">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Os gastos que o usuário adicionar irão aparecer aqui-->
+                    <th>
+                        <tr>
+                            <td>
+                                <div class="table-check">
+                                    <input type="checkbox">
+                                </div>
+                            </td>
+                            <td>
+                                <input class="table-input" type="date">
+                            </td>
+                            <td>
+                                
+                                <input class="table-input" type="text">
+                            </td>
+                            <td>
+                                
+                                <input class="table-input" type="text">
+                            </td>
+                            <td>
+                                
+                                <input class="table-input" type="text">
+                            </td>
+                            <td>
+                                
+                                <input class="table-input" type="text">
+                            </td>
+                        </tr>
+                        
+                    </th>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="total" colspan="6">
+                            <div id="total"><strong>Total: R$ 0,00</strong></div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="container-button">
+            <button id="adicionar">Adicionar</button>
+            <button id="editar">Editar</button>
+            <button id="remover">Remover</button>
+            <button id="voltar">Voltar</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
