@@ -1,0 +1,92 @@
+mysql -u root -p
+senha: ******
+
+show databases;
+
+create database atividade;
+
+use atividade
+
+create table clientes (id int auto_increment primary key, nome varchar(100), email varchar(100), idade int);
+
+insert into clientes (nome, email, idade) values ('João Silva', 'joao.silva@exemplo.com', 30), ('Maria Oliveira', 'maria.oliveira@exemplo.com', 25), ('Pedro Souza', 'pedro.souza@exemplo.com', 35);
+
+(drop table clientes; (apagar tabela))
+
+show tables;
+
+describe clientes;
+
+select * from clientes; (seleciona tudo)
+
+select * from clientes where nome = 'maria oliveira'; (seleciona um de tudo)
+
+select * from clientes order by idade asc; (ordena por idade crescente)
+
+select * from clientes order by idade desc; (ordena por idade decrescente)
+
+select * from clientes order by idade desc limit 1; (retorna o primeiro  maior valor)
+select * from clientes order by idade desc limit 3; (retorna os três primeiros valores maiores, pode fazer com crescente)
+
+select * from clientes where email like '%exemplo%'; (seleciona tudo com o @exemplo)
+select * from clientes where nome like '%or%';
+select * from clientes where idade like '%3%';
+
+select nome, idade from clientes order by idade desc; (seleciona o nome e a idade e ordena por idade decrescente)
+
+select nome, email from clientes where email like '%s%'; (seleciona o nome e o email e ordena por email que contenha 's')
+
+select avg(idade) as media_idade from clientes; (seleciona os valores da idade e faz a media em uma coluna media_idade)
+
+select count(*) as total_clientes from clientes; (conta quantos registros têm)
+
+select nome, idade, (idade*2) as dobro_idade from clientes; (mostra o dobro das idades com os nomes)
+
+alter table clientes rename column idade to idade_cliente; (renomeia a coluna idade para idade cliente)
+
+alter table clientes modify column email varchar(50); (modifica o tipo ou característica da coluna específica)
+
+alter table clientes modify column email varchar(30) not null; (modifica a coluna e deixa para não nulo)
+
+update clientes set idade = idade + 5; (atualiza a idade de todos para +5)
+
+update clientes set nome = 'João Silva Dias' where id = 1; (atualiza o nome por id)
+
+update clientes set nome = 'Dias'; (atualiza todos os nomes para Dias)
+
+update clientes set nome = 'Maria Oliveira Rios', idade = 33 where id = 2; (atualiza o nome e a idade por id)
+
+alter table clientes add column endereco varchar(255); (add uma coluna na tabela)
+
+update clientes set endereco = 'Rua das Borboletas, n 189' where id = 1; (add ou atualiza o endereço)
+
+alter table clientes drop column telefone; (deleta uma coluna específica)
+
+delete from clientes; (apaga todos os registros)
+
+delete from clientes where id = 1; (apaga apenas a linha específica)
+
+quando deletar cliente ou funcionário não pode o not null estar selecionado e o delete deles tem q ser set null
+
+\! cls (apaga o console na tela)
+
+
+create table produtos (id int auto_increment primary key, nome varchar(100), descricao varchar(100), categoria varchar(100), preco decimal(10,2), qntd_em_estoque int, data_de_valid date);
+nome, descrição, categoria, preco, qntd_em_estoque, data_de_valid
+
+create table clientes (id int auto_increment primary key, nome varchar(100), email varchar(100), telefone int, endereco varchar(100));
+
+create table fornecedores (id int auto_increment primary key, nome_da_empresa varchar(100), categoria varchar(100), nome_do_contato varchar(50), telefone int, email varchar(100), endereco varchar(100));
+
+create table vendas (id int auto_increment primary key, data_da_venda date, id_cliente int, id_funcionario int, id_lista_itens int, valor_total decimal(10,2));
+create table lista_itens (id int auto_increment primary key, item varchar(100), quantidade int, preco decimal(10.2), valor_total decimal (10,2));
+
+
+create table funcionarios (id int auto_increment primary key, nome varchar(100), email varchar(100), telefone int, cargo varchar(100));
+
+insert into clientes (nome, email, idade) values ('João Silva', 'joao.silva@exemplo.com', 30), ('Maria Oliveira', 'maria.oliveira@exemplo.com', 25), ('Pedro Souza', 'pedro.souza@exemplo.com', 35);
+
+ insert into fornecedores (nome_da_empresa, categoria, nome_do_contato, telefone, email, endereco) values ('Alimentos Alpha', 'alimentos', 'Carlos Oliveira', 11976897698, 'contato@alimentosalpha.com', 'Av. das Nações Unidas, 1456, São Paulo - SP'), ('Bebidas Super', 'bebidas', 'Mariene Santos', 21988552244, 'contato@bebidassuper.com', 'Rua das Inovações, 589, Rio de Janeiro'), ('Limpeza Renova', 'limpeza e higiene', 'Rafael Fernandes', 31966667877, 'Praça da Limpeza, 489, Belo Horizonte - MG');
+
+
+o funcionário tem q ter acesso ao id do cliente e o id da sua venda, então fk_oqeuquero_quemquer 
