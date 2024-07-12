@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: azure;
+}
+li{
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    align-items: center;
+    display: flex;
+}
+.list-header{
+    width: 100%;
+    height: 120px;
+    align-content: center;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+.reference-body{
+    width: 100%;
+    height: 687px;
+    align-content: center;
+    text-align: center;
+}
+.list-footer{
+    width: 100%;
+    height: 120px;
+    align-content: center;
+    text-align: center;
+    background-color: cadetblue;
+}
