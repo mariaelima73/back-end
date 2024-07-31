@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     let entrar = document.getElementById('entrar')
     let recuperar = document.getElementById('recuperar')
     let registrar = document.getElementById('registrar')
@@ -35,5 +35,5 @@
     sobre.addEventListener('click', function(){
         location.href = 'sobre.html'
     })}
-})*/
+})
 

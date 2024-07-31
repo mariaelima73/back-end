@@ -1,14 +1,14 @@
 body{
-    background-image: url(tablet.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 98vh;
-    background-size: contain;
     color: azure;
     font-family: Arial, sans-serif;
 }
 .container{
     padding: 130px 0 0 0;
+    background-image: url(tablet-model.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 98vh;
+    background-size: contain;
 }
 .index-text, .sobre-text, .login-text{
     margin-left: auto;
