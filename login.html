@@ -8,25 +8,29 @@
 </head>
 <body>
     <div class="container">
-        <div class="login-text">
-            <h1>FINANCE SENAI - Login</h1>
-            <p>Para entrar no sistema, faça seu login utilizando e-mail e senha.</p>
-        </div>
-        <div class="login">
-            <form action="">
-                <div class="container-login">
-                    <label>Email:</label>
-                    <input class="login-input" type="email" placeholder="seu@email.com" required>
-                    <label>Senha:</label>
-                    <input class="login-input" type="password" placeholder="digite sua senha" required>
-                </div>
-            </form>
-        </div>
-        <div class="container-button">
-            <a href="recuperar.html"><button id="recuperar">Recuperar Senha</button></a>
-            <a href="sisfsgpe.html"><button id="entrar">Entrar</button></a>
-            <a href="registro.html"><button id="registrar">Registrar</button></a>
-            <a href="index.html"><button id="voltar">Voltar</button></a>
+        <div class="container2">
+            <div class="login-text">
+                <h1>FINANCE SENAI - Login</h1>
+                <p>Para entrar no sistema, faça seu login utilizando e-mail e senha.</p>
+            </div>
+            <div class="login">
+                <form id="form-login" action="sisfsgpe.html">
+                    <div class="container-login">
+                        <label>Email:</label>
+                        <input type="email" required class="login-input" placeholder="seu@email.com">
+                        <label>Senha:</label>
+                        <input type="password" required class="login-input" placeholder="digite sua senha">
+                        <div class="container-button button-login">
+                            <button type="submit" id="entrar">Entrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container-button">
+                <a href="recuperar.html"><button id="recuperar">Recuperar Senha</button></a>
+                <a href="registro.html"><button id="registrar">Registrar</button></a>
+                <a href="index.html"><button id="voltar">Voltar</button></a>
+            </div>
         </div>
     </div>
 

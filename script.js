@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     let entrar = document.getElementById('entrar')
     let recuperar = document.getElementById('recuperar')
     let registrar = document.getElementById('registrar')
@@ -35,5 +35,27 @@ document.addEventListener("DOMContentLoaded", function() {
     sobre.addEventListener('click', function(){
         location.href = 'sobre.html'
     })}
-})
+})*/
 
+document.getElementById('form-recuperar').addEventListener('submit', function(){
+    let formRecup = document.getElementById('form-recuperar');
+    if (formRecup.checkValidity()){
+        alert('Email enviado! Por favor verifique sua caixa de spam caso não o encontre.');
+        location.href = formRecup.action;
+    }
+});
+
+document.getElementById('form-login').addEventListener('submit', function(){
+    let formLogin = document.getElementById('form-login');
+    if (formLogin.checkValidity()){
+        location.href = formLogin.action;
+    }
+});
+
+document.getElementById('form-registrar').addEventListener('submit', function(){
+    let formRegis = document.getElementById('form-registrar');
+    if (formRegis.checkValidity()){
+        alert('Usuário cadastrado, por favor faça o login.');
+        location.href = formRegis.action;
+    }
+});

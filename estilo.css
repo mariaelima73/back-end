@@ -1,14 +1,18 @@
 body{
+    background-color: rgb(43, 183, 226);
     color: azure;
     font-family: Arial, sans-serif;
 }
 .container{
-    padding: 130px 0 0 0;
     background-image: url(tablet-model.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 98vh;
     background-size: contain;
+    padding: 130px 0 0 0;
+    height: 84vh;
+}
+.container2{
+    padding: 30px 0 0 0;
 }
 .index-text, .sobre-text, .login-text{
     margin-left: auto;
@@ -29,14 +33,17 @@ h1, p{
 }
 .container-button button{
     width: 400px; /* ***** */
+    margin-bottom: 12px;
 }
 .container-button button, .login-input, .table-input, .register-input{
     border: none;
     border-radius: 10px;
     background-color: azure;
-    margin-bottom: 12px;
     padding: 10px;
     font-size: 15px;
+}
+.button-login{
+    margin-top: 20px;
 }
 button{
     cursor: pointer;
@@ -80,4 +87,24 @@ table, .table-header-item{
     font-size: 15px;
     display: flex;
     justify-content: end;
+}
+
+@media (max-width: 320p) {
+    .index-text, .sobre-text, .login-text{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    h1, p{
+        text-align: center;
+        margin: 12px 0 20px 0;
+    }
+    h1{
+        font-size: 5px;
+    }
+    .index-image, .table, .table-check{
+        width: 100px;
+        height: 100px;
+    }
 }

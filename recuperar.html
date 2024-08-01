@@ -8,26 +8,30 @@
 </head>
 <body>
     <div class="container">
-        <div class="login-text">
-            <h1>FINANCE SENAI - Recuperação de Senha</h1>
-            <p>Preencha os campos baixo para iniciar a recuparação da senha.</p>
-        </div>
-        <div class="login">
-            <form action="">
-                <div class="container-login">
-                    <label>Nome Completo:</label>
-                    <input class="register-input" type="text" placeholder="digite seu nome completo">
-                    <label>Email:</label>
-                    <input class="register-input" type="email" placeholder="seu@email.com">
-                </div>
-            </form>
-        </div>
-        <div class="login-text">
-            <p>Enviaremos um e-mail com o passo a passo para recuperar sua senha e fazer login novamente.</p>
-        </div>
-        <div class="container-button">
-            <button id="concluir">Enviar</button>
-            <button id="voltar">Voltar</button>
+        <div class="container2">
+            <div class="login-text">
+                <h1>FINANCE SENAI - Recuperação de Senha</h1>
+                <p>Preencha os campos baixo para iniciar a recuparação da senha.</p>
+            </div>
+            <div class="login">
+                <form id="form-recuperar" action="login.html">
+                    <div class="container-login">
+                        <label>Nome Completo:</label>
+                        <input type="text" class="register-input" placeholder="digite seu nome completo">
+                        <label>Email:</label>
+                        <input type="email" required class="register-input" placeholder="seu@email.com">
+                        <div class="container-button button-login">
+                            <button type="submit" id="concluir">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="login-text">
+                <p>Enviaremos um e-mail com o passo a passo para recuperar sua senha e fazer login novamente.</p>
+            </div>
+            <div class="container-button">
+                <a href="login.html"><button id="voltar">Voltar</button></a>
+            </div>
         </div>
     </div>
 

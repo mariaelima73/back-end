@@ -8,27 +8,31 @@
 </head>
 <body>
     <div class="container">
-        <div class="login-text">
-            <h1>FINANCE SENAI - Registro</h1>
-            <p>Preencha os campos baixo para fazer seu registro conosco.</p>
-        </div>
-        <div class="login">
-            <form action="">
-                <div class="container-login">
-                    <label>Nome Completo:</label>
-                    <input class="register-input" type="text" placeholder="digite seu nome completo" required>
-                    <label>Email:</label>
-                    <input class="register-input" type="email" placeholder="seu@email.com" required>
-                    <label>Senha:</label>
-                    <input class="register-input" type="password" placeholder="digite sua senha" required>
-                    <label>Data de Nascimento:</label>
-                    <input class="register-input" type="date" required>
-                </div>
-            </form>
-        </div>
-        <div class="container-button">
-            <button id="concluir">Registrar</button>
-            <button id="voltar">Voltar</button>
+        <div class="container2">
+            <div class="login-text">
+                <h1>FINANCE SENAI - Registro</h1>
+                <p>Preencha os campos baixo para fazer seu registro conosco.</p>
+            </div>
+            <div class="login">
+                <form id="form-registrar" action="login.html">
+                    <div class="container-login">
+                        <label>Nome Completo:</label>
+                        <input class="register-input" type="text" placeholder="digite seu nome completo" required>
+                        <label>Email:</label>
+                        <input class="register-input" type="email" placeholder="seu@email.com" required>
+                        <label>Senha:</label>
+                        <input class="register-input" type="password" placeholder="digite sua senha" required>
+                        <label>Data de Nascimento:</label>
+                        <input class="register-input" type="date" required>
+                        <div class="container-button button-login">
+                            <button type="submit" id="concluir">Registrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container-button">
+                <a href="login.html"><button id="voltar">Voltar</button></a>
+            </div>
         </div>
     </div>
 
